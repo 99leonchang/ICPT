@@ -27,7 +27,6 @@ tiles-count: 6
 tiles-source: posts
 # Build settings
 markdown: kramdown
-theme: minima
 gems:
   - jekyll-feed
   - jekyll-seo-tag
