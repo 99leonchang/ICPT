@@ -1,0 +1,21 @@
+<!-- Header -->
+<header id="header"{%if page.layout == "home" %} class="alt"{% endif %}>
+    <span class="logo"><a href="{{ site.url }}{{ site.baseurl }}">{{ site.title-bold }}</a> <span>{{ site.year }}</span></span>
+    <a href="#menu">Menu</a>
+</header>
+
+<!-- Nav -->
+<nav id="menu">
+    <div class="inner">
+        <h2>Menu</h2>
+        <ul class="links">
+            <li><a href="{{ site.url }}{{ site.baseurl }}">Home</a></li>
+            {% for page in site.html_pages %}
+                {% if page.layout != "home" %}
+                    <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+        <a class="close">Close</a>
+    </div>
+</nav>
