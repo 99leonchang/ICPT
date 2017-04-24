@@ -98,7 +98,7 @@
 	}
 
 		#banner:after {
-			background-color: #472e68;
+			background-color: #2b5a96;
 			opacity: 0.9;
 		}
 
@@ -133,7 +133,7 @@
 		#footer:after {
 			content: '';
 			display: block;
-			background-color: #472e68;
+			background-color: #2b5a96;
 			opacity: 0.9;
 			position: absolute;
 			top: 0;

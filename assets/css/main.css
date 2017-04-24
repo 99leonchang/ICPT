@@ -1850,7 +1850,7 @@
 	}
 
 	a {
-		color: #00a6d9;
+		color: #39a288;
 	}
 
 	strong, b {
@@ -2055,7 +2055,7 @@
 		button.special,
 		.button.special {
 			box-shadow: none;
-			background-color: #00a6d9;
+			background-color: #39a288;
 			color: #ffffff !important;
 		}
 
@@ -2076,7 +2076,7 @@
 			button.special:focus,
 			.button.special:hover,
 			.button.special:focus {
-				background-color: #00baf3;
+				background-color: #40b598;
 			}
 
 			input[type="submit"].special:active,
@@ -2084,7 +2084,7 @@
 			input[type="button"].special:active,
 			button.special:active,
 			.button.special:active {
-				background-color: #0092c0;
+				background-color: #328f78;
 			}
 
 	/*
@@ -2304,8 +2304,8 @@
 		input[type="email"]:focus,
 		select:focus,
 		textarea:focus {
-			border-color: #00a6d9;
-			box-shadow: 0 0 0 1px #00a6d9;
+			border-color: #39a288;
+			box-shadow: 0 0 0 1px #39a288;
 		}
 
 	.select-wrapper:before {
@@ -2325,15 +2325,15 @@
 
 	input[type="checkbox"]:checked + label:before,
 	input[type="radio"]:checked + label:before {
-		background-color: #00a6d9;
-		border-color: #00a6d9;
+		background-color: #39a288;
+		border-color: #39a288;
 		color: #ffffff;
 	}
 
 	input[type="checkbox"]:focus + label:before,
 	input[type="radio"]:focus + label:before {
-		border-color: #00a6d9;
-		box-shadow: 0 0 0 1px #00a6d9;
+		border-color: #39a288;
+		box-shadow: 0 0 0 1px #39a288;
 	}
 
 	::-webkit-input-placeholder {
@@ -2721,7 +2721,7 @@
 	}
 
 	header.major p {
-		color: #00a6d9;
+		color: #39a288;
 	}
 
 	header.major:after {
@@ -2907,9 +2907,26 @@
 		License: pixelarity.com/license
 	*/
 
-/* Features */
+/* aatures */
+.headphone{
+	background: url("../../images/headphone.png");
+	background-size: cover;
+}
 
-	.features {
+.speaker{
+	background: url("../../images/speaker.png");
+	background-size: cover;
+	background-color: white;
+}
+
+.battery{
+	background: url("../../images/battery.png");
+	background-size: cover;
+	background-color: white;
+
+}
+
+.features {
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
@@ -2943,7 +2960,6 @@
 			text-align: center;
 			width: 3.75em;
 		}
-
 		.features h4 {
 			font-weight: 700;
 			margin-bottom: 0.5em;
@@ -3169,7 +3185,7 @@
 		}
 
 	.timeline header p {
-		color: #00a6d9;
+		color: #39a288;
 	}
 
 	/*
@@ -3227,7 +3243,7 @@
 			}
 
 		.wrapper.style1 {
-			background-color: #00a6d9;
+			background-color: #39a288;
 			color: #ffffff;
 		}
 
@@ -3309,7 +3325,7 @@
 				.wrapper.style1 .button.special {
 					box-shadow: none;
 					background-color: #ffffff;
-					color: #00a6d9 !important;
+					color: #39a288 !important;
 				}
 
 					.wrapper.style1 input[type="submit"].special.icon:before,
@@ -3317,7 +3333,7 @@
 					.wrapper.style1 input[type="button"].special.icon:before,
 					.wrapper.style1 button.special.icon:before,
 					.wrapper.style1 .button.special.icon:before {
-						color: #00a6d9 !important;
+						color: #39a288 !important;
 					}
 
 			.wrapper.style1 label {
@@ -3361,7 +3377,7 @@
 			.wrapper.style1 input[type="radio"]:checked + label:before {
 				background-color: #ffffff;
 				border-color: #ffffff;
-				color: #00a6d9;
+				color: #39a288;
 			}
 
 			.wrapper.style1 input[type="checkbox"]:focus + label:before,
@@ -3447,7 +3463,7 @@
 			}
 
 			.wrapper.style1:before, .wrapper.style1:after {
-				background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,0 0,100 100,100' style='fill:%2300a6d9%3B' /%3E%3C/svg%3E");
+				background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,0 0,100 100,100' style='fill:%2339a288%3B' /%3E%3C/svg%3E");
 			}
 
 		.wrapper.style2 {
@@ -3460,7 +3476,7 @@
 			}
 
 			.wrapper.style2 a {
-				color: #00a6d9;
+				color: #39a288;
 			}
 
 			.wrapper.style2 strong, .wrapper.style2 b {
@@ -3532,7 +3548,7 @@
 				.wrapper.style2 button.special,
 				.wrapper.style2 .button.special {
 					box-shadow: none;
-					background-color: #00a6d9;
+					background-color: #39a288;
 					color: #ffffff !important;
 				}
 
@@ -3553,7 +3569,7 @@
 					.wrapper.style2 button.special:focus,
 					.wrapper.style2 .button.special:hover,
 					.wrapper.style2 .button.special:focus {
-						background-color: #00baf3;
+						background-color: #40b598;
 					}
 
 					.wrapper.style2 input[type="submit"].special:active,
@@ -3561,7 +3577,7 @@
 					.wrapper.style2 input[type="button"].special:active,
 					.wrapper.style2 button.special:active,
 					.wrapper.style2 .button.special:active {
-						background-color: #0092c0;
+						background-color: #328f78;
 					}
 
 			.wrapper.style2 label {
@@ -3582,8 +3598,8 @@
 				.wrapper.style2 input[type="email"]:focus,
 				.wrapper.style2 select:focus,
 				.wrapper.style2 textarea:focus {
-					border-color: #00a6d9;
-					box-shadow: 0 0 0 1px #00a6d9;
+					border-color: #39a288;
+					box-shadow: 0 0 0 1px #39a288;
 				}
 
 			.wrapper.style2 .select-wrapper:before {
@@ -3603,15 +3619,15 @@
 
 			.wrapper.style2 input[type="checkbox"]:checked + label:before,
 			.wrapper.style2 input[type="radio"]:checked + label:before {
-				background-color: #00a6d9;
-				border-color: #00a6d9;
+				background-color: #39a288;
+				border-color: #39a288;
 				color: #ffffff;
 			}
 
 			.wrapper.style2 input[type="checkbox"]:focus + label:before,
 			.wrapper.style2 input[type="radio"]:focus + label:before {
-				border-color: #00a6d9;
-				box-shadow: 0 0 0 1px #00a6d9;
+				border-color: #39a288;
+				box-shadow: 0 0 0 1px #39a288;
 			}
 
 			.wrapper.style2 ::-webkit-input-placeholder {
@@ -3643,7 +3659,7 @@
 			}
 
 			.wrapper.style2 header.major p {
-				color: #00a6d9;
+				color: #39a288;
 			}
 
 			.wrapper.style2 header.major:after {
@@ -3687,7 +3703,7 @@
 				}
 
 			.wrapper.style2 .timeline header p {
-				color: #00a6d9;
+				color: #39a288;
 			}
 
 			.wrapper.style2:before, .wrapper.style2:after {
@@ -3952,7 +3968,7 @@
 		-ms-user-select: none;
 		user-select: none;
 		-webkit-tap-highlight-color: transparent;
-		background-color: rgba(47, 33, 66, 0.9);
+		background-color: rgba(35, 67, 107, 0.9);
 		cursor: default;
 		height: 100%;
 		left: 0;
@@ -3977,7 +3993,7 @@
 			-ms-transition: opacity 0.5s ease, -ms-transform 0.5s ease;
 			transition: opacity 0.5s ease, transform 0.5s ease;
 			-webkit-overflow-scrolling: touch;
-			background: #00a6d9;
+			background: #39a288;
 			border-radius: 4px;
 			color: #ffffff;
 			display: block;
@@ -4055,7 +4071,7 @@
 				}
 
 					#menu .links li a:hover {
-						color: #00a6d9;
+						color: #39a288;
 						background-color: #ffffff;
 					}
 
@@ -4106,10 +4122,11 @@
 /* Banner */
 
 	#banner {
-		background-image: -moz-linear-gradient(to top, rgba(71, 46, 104, 0.9), rgba(71, 46, 104, 0.9)), url("../../images/banner.jpg");
-		background-image: -webkit-linear-gradient(to top, rgba(71, 46, 104, 0.9), rgba(71, 46, 104, 0.9)), url("../../images/banner.jpg");
-		background-image: -ms-linear-gradient(to top, rgba(71, 46, 104, 0.9), rgba(71, 46, 104, 0.9)), url("../../images/banner.jpg");
-		background-image: linear-gradient(to top, rgba(71, 46, 104, 0.9), rgba(71, 46, 104, 0.9)), url("../../images/banner.jpg");
+		background-image: -moz-linear-gradient(to top, rgba(43, 90, 150, 0.9), rgba(43, 90, 150, 0.9)), url("../../images/banner.jpg");
+		background-image: -webkit-linear-gradient(to top, rgba(43, 90, 150, 0.9), rgba(43, 90, 150, 0.9)), url("../../images/banner.jpg");
+		background-image: -ms-linear-gradient(to top, rgba(43, 90, 150, 0.9), rgba(43, 90, 150, 0.9)), url("../../images/banner.jpg");
+		background-image: linear-gradient(to top, rgba(43, 90, 150, 0.9), rgba(43, 90, 150, 0.9)), url("../../images/banner.jpg");
+		//background-image: url("../../images/hackerman.jpg");
 		background-attachment: fixed;
 		background-position: center center;
 		background-size: cover;
@@ -4157,7 +4174,7 @@
 			pointer-events: none;
 			content: '';
 			display: block;
-			background-color: #2f2142;
+			background-color: #23436b;
 			opacity: 0;
 			position: absolute;
 			top: 0;
@@ -4248,10 +4265,10 @@
 /* Footer */
 
 	#footer {
-		background-image: -moz-linear-gradient(to top, rgba(71, 46, 104, 0.9), rgba(71, 46, 104, 0.9)), url("../../images/banner.jpg");
-		background-image: -webkit-linear-gradient(to top, rgba(71, 46, 104, 0.9), rgba(71, 46, 104, 0.9)), url("../../images/banner.jpg");
-		background-image: -ms-linear-gradient(to top, rgba(71, 46, 104, 0.9), rgba(71, 46, 104, 0.9)), url("../../images/banner.jpg");
-		background-image: linear-gradient(to top, rgba(71, 46, 104, 0.9), rgba(71, 46, 104, 0.9)), url("../../images/banner.jpg");
+		background-image: -moz-linear-gradient(to top, rgba(43, 90, 150, 0.9), rgba(43, 90, 150, 0.9)), url("../../images/banner.jpg");
+		background-image: -webkit-linear-gradient(to top, rgba(43, 90, 150, 0.9), rgba(43, 90, 150, 0.9)), url("../../images/banner.jpg");
+		background-image: -ms-linear-gradient(to top, rgba(43, 90, 150, 0.9), rgba(43, 90, 150, 0.9)), url("../../images/banner.jpg");
+		background-image: linear-gradient(to top, rgba(43, 90, 150, 0.9), rgba(43, 90, 150, 0.9)), url("../../images/banner.jpg");
 		background-attachment: fixed;
 		background-position: center center;
 		background-size: cover;
@@ -4284,7 +4301,7 @@
 			}
 
 				#footer .contact li strong {
-					color: #00a6d9;
+					color: #39a288;
 					display: block;
 					margin-bottom: 0.5em;
 					text-transform: uppercase;
@@ -4317,7 +4334,7 @@
 					}
 
 		#footer form {
-			background-color: #00a6d9;
+			background-color: #39a288;
 			color: #ffffff;
 			padding: 4em 3.5em 2em 3.5em ;
 			-moz-flex-grow: 1;
@@ -4405,7 +4422,7 @@
 				#footer form .button.special {
 					box-shadow: none;
 					background-color: #ffffff;
-					color: #00a6d9 !important;
+					color: #39a288 !important;
 				}
 
 					#footer form input[type="submit"].special.icon:before,
@@ -4413,7 +4430,7 @@
 					#footer form input[type="button"].special.icon:before,
 					#footer form button.special.icon:before,
 					#footer form .button.special.icon:before {
-						color: #00a6d9 !important;
+						color: #39a288 !important;
 					}
 
 			#footer form label {
@@ -4457,7 +4474,7 @@
 			#footer form input[type="radio"]:checked + label:before {
 				background-color: #ffffff;
 				border-color: #ffffff;
-				color: #00a6d9;
+				color: #39a288;
 			}
 
 			#footer form input[type="checkbox"]:focus + label:before,
