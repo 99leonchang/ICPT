@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Sign Up Form</title>
+		<title>ICPT - Sign Up Form</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
@@ -25,21 +25,6 @@
 						<!--a href="#menu">Menu</a-->
 					</header>
 
-				<!-- Nav -->
-					<nav id="menu">
-						<div class="inner">
-							<h2>Menu</h2>
-							<ul class="links">
-								<li><a href="index.html">Home</a></li>
-								<li><a href="generic.html">Generic</a></li>
-								<li><a href="elements.html">Elements</a></li>
-								<li><a href="#">Log In</a></li>
-								<li><a href="#">Sign Up</a></li>
-							</ul>
-							<a class="close">Close</a>
-						</div>
-					</nav>
-
 				<!-- Main -->
 					<section id="main" class="wrapper alt">
 						<div class="inner">
@@ -52,14 +37,20 @@
 							<!--a href="#" class="image main"><img src="images/kids.jpg" alt="" /></a-->
 							<h3>Terms and Conditions</h3>
 							<ul>
-								<li>Participants must pay an entrance fee of <b>100NTD</b> on the day of the competitions.</li>
+								<li>Participants must pay an entrance fee of <b>100NTD</b> on the day of the competition.</li>
 								<li>Please act responsibly on the day of the competition. We are not responsible for any lost items or exploding computers.</li>
 								<li>Parents must be notified of your participation of this event.</li>
 							</ul>
-							<form method="post" action="https://calm-beach-46116.herokuapp.com/s/58ff66de6852b71ea0457684">
+							<div id="loading" class="align-center">
+								<img src="images/loader3.gif" alt=""/><p>Loading...</p>
+							</div>
+							<div id="closed" class="align-center" hidden>
+								<h2>Submissions are closed.</h2>
+							</div>
+							<form method="post" action="https://calm-beach-46116.herokuapp.com/s/590b49908b0f7c0011ff99c8" id="form" hidden>
 								<div class="row uniform">
 									<div class="5u 12u$(xsmall)">
-										<input type="text" name="name" id="name" value="" placeholder="Name" required/>
+										<input type="text" name="name" id="name" value="" placeholder="Full Name" required/>
 									</div>
 									<div class="5u 12u$(xsmall)">
 										<input type="email" name="email" id="email" value="" placeholder="Email" required/>
@@ -132,7 +123,7 @@
 							</form>
 						</div-->
 						<div class="copyright">
-							&copy; IBSH Computer Programming Club ❤️ 💻. All rights reserved.
+							&copy; IBSH Computer Programming Club ❤💻. All rights reserved.
 						</div>
 					</footer>
 
@@ -146,6 +137,28 @@
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+
+		<script>
+            $(document).ready(function () {
+                var url = "https://calm-beach-46116.herokuapp.com/api/";
+                var formID = "590b49908b0f7c0011ff99c8";
+                $.ajax({
+                    url: url+'forms/'+formID+'/info',
+                    type: 'GET',
+                    dataType: 'json',
+                    success: function(data) {
+                        console.log(data);
+                        $("#loading").fadeOut(100);
+                        if(data.active){
+                            $("#form").fadeIn(500);
+                        } else {
+                            $("#closed").fadeIn(500);
+						}
+                    },
+                    error: function(err) { console.log(err); }
+                });
+            });
+		</script>
 
 	</body>
 </html>
